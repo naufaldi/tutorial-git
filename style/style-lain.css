@@ -1,0 +1,118 @@
+.navbar {
+  color: red;
+}
+
+.pargraf {
+  font-family: "Roboto", san-serif;
+  font-size: 24px;
+  color: red;
+}
+
+header {
+  background-color: green;
+}
+
+header nav {
+  background-color: blue;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+header nav div span {
+  display: block;
+  height: 100px;
+  background-color: black;
+  font-size: 24px;
+  font-family: "Roboto", san-serif;
+  color: red;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  gap: 10;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.heading {
+  font-size: 72px;
+  font-family: " Red Hat Display", sans-serif;
+  color: primaryBlack;
+}
+
+.card {
+  background-color: black;
+  padding: 22px;
+}
+
+.card__header {
+  font-size: 22px;
+}
+
+.card__body {
+  font-size: 16px;
+}
+
+.card__footer {
+  font-size: 10px;
+}
+
+.card-button {
+  padding: 20px;
+  color: black;
+}
+
+.card-button:hover {
+  background-color: blue;
+  padding: 10px;
+}
+
+.card-button--white {
+  background-color: white;
+}
+
+.card-button--red {
+  background-color: red;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    background-color: green;
+  }
+  header nav {
+    background-color: blue;
+  }
+  header nav div span {
+    display: block;
+    height: 100px;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    background-color: green;
+  }
+  header nav {
+    background-color: blue;
+  }
+  header nav div span {
+    display: block;
+    height: 100px;
+    background-color: black;
+  }
+}
+/*# sourceMappingURL=style-lain.css.map */

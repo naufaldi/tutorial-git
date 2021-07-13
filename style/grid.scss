@@ -1,0 +1,48 @@
+.button {
+  padding: 1rem 2rem;
+  background-color: blue;
+  color: white;
+  // transition-property: background-color, color;
+  // transition: 2s;
+  // transition-timing-function: ease-in;
+  // transition-delay: 1s;
+  transition: all 250ms ease-in;
+  &:hover {
+    background-color: orange;
+    color: blue;
+  }
+}
+
+@keyframes red-to-blue {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.box {
+  height: 100px;
+  width: 100px;
+  // animation-name: red-to-blue;
+  // animation-duration: 4s;
+  // animation-timing-function: ease-in-out;
+  // animation-delay: 2s;
+  // animation-iteration-count: infinite;
+  animation: red-to-blue 4s ease-in-out infinite;
+  &--come {
+    background-color: blue;
+    animation: fade-in 1s ease-in;
+  }
+}

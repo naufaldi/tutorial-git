@@ -1,0 +1,31 @@
+@media screen and (max-width: 720px) {
+  header {
+    background-color: green;
+    nav {
+      background-color: blue;
+      div {
+        span {
+          display: block;
+          height: 100px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    background-color: green;
+    nav {
+      background-color: blue;
+      div {
+        span {
+          display: block;
+          height: 100px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}

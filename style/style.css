@@ -1,0 +1,96 @@
+:root {
+  --red: red;
+  --bg-black: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bgr-blue {
+  background-color: blue;
+}
+.flex {
+  display: flex;
+}
+
+.navbar {
+  background-color: var(--bg-black);
+}
+header {
+  background-color: green;
+}
+nav {
+  background-color: blue;
+}
+header nav div span {
+  display: block;
+  height: 100px;
+  background-color: black;
+}
+.form .input {
+  height: 20px;
+  background-color: green;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    background-color: green;
+  }
+  nav {
+    background-color: blue;
+  }
+  header nav div span {
+    display: block;
+    height: 200px;
+    background-color: black;
+  }
+  .form .input {
+    height: 40px;
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    background-color: green;
+  }
+  nav {
+    background-color: blue;
+  }
+  header nav div span {
+    display: block;
+    height: 200px;
+    background-color: black;
+  }
+  .form .input {
+    height: 40px;
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    background-color: green;
+  }
+  nav {
+    background-color: blue;
+  }
+  header nav div span {
+    display: block;
+    height: 200px;
+    background-color: black;
+  }
+  .form .input {
+    height: 40px;
+    background-color: green;
+  }
+}
+
+.heading-one {
+  font-size: 72px;
+  font-family: ' Red Hat Display', sans-serif;
+  color: primaryBlack;
+}

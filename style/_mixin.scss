@@ -1,0 +1,17 @@
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+@mixin fontLarge {
+  font-size: $fontLarge;
+  font-family: $fontRoboto;
+  color: $red;
+}
+
+@mixin fontH1 {
+  font-size: $HeadingOneSize;
+  font-family: $fontRedHeat;
+  color: primaryBlack;
+}

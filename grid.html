@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        height: auto;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .col-1 {
+        grid-column: 1/3;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 200px;
+      }
+      .logo {
+        background-color: gray;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 67px;
+      }
+      .container-image {
+        background-color: gray;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        height: 491px;
+      }
+      .heading {
+        background-color: red;
+        grid-row-start: 2;
+        grid-column-start: 8;
+        grid-column-end: 13;
+      }
+      .paragraf {
+        background-color: red;
+        grid-row-start: 3;
+        grid-column-start: 8;
+        grid-column-end: 13;
+      }
+      .button {
+        background-color: red;
+        grid-row-start: 4;
+        grid-column-start: 8;
+        grid-column-end: 13;
+      }
+      .container-caption {
+        background-color: rgba(0, 0, 0, 0.2);
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 5;
+      }
+      .footer {
+        background: blue;
+        grid-row-start: 5;
+        grid-column-start: 11;
+        grid-column-end: 13;
+        height: 54px;
+      }
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <link rel="stylesheet" href="style/grid.css" />
+  </head>
+  <body>
+    <section class="grid">
+      <div class="logo"></div>
+      <div class="container-image"></div>
+      <div class="container-caption flex">
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+          inventore rem, sit quo sunt magnam deleniti assumenda temporibus
+          dolorum facilis consequuntur illo asperiores reprehenderit ducimus
+          nisi veniam ex? Vel, tempora.
+        </p>
+        <button class="button">Button</button>
+        <div class="box"></div>
+        <div class="box box--come"></div>
+      </div>
+      <div class="footer"></div>
+    </section>
+
+    <section class="grid-2">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        temporibus repudiandae debitis explicabo beatae rerum velit ea
+        doloribus, assumenda deserunt laudantium illum officia, quis iusto saepe
+        sint aut perspiciatis autem.
+      </div>
+    </section>
+  </body>
+</html>

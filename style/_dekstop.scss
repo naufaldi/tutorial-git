@@ -1,0 +1,69 @@
+.navbar {
+  color: $red;
+}
+
+.pargraf {
+  font-family: $fontRoboto;
+  font-size: $fontLarge;
+  color: $red;
+}
+
+header {
+  background-color: green;
+  nav {
+    background-color: blue;
+    @include important-text;
+    div {
+      span {
+        display: block;
+        height: 100px;
+        background-color: black;
+        @include fontLarge;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  gap: 10;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.heading {
+  @include fontH1;
+}
+
+.card {
+  background-color: black;
+  padding: 22px;
+  &__header {
+    font-size: 22px;
+  }
+  &__body {
+    font-size: 16px;
+  }
+  &__footer {
+    font-size: 10px;
+  }
+  &-button {
+    padding: 20px;
+    color: black;
+    &:hover {
+      background-color: blue;
+      padding: 10px;
+    }
+    &--white {
+      background-color: white;
+    }
+    &--red {
+      background-color: red;
+    }
+  }
+}
